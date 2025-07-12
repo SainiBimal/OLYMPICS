@@ -57,12 +57,14 @@ The analysis is based on **15,315 cleaned entries** across **11 columns**, cover
 ### 🎖️ Country-wise Medal Type
 - Stacked barplot with gold/silver/bronze breakdown by country.
 
-### 🇮🇳 India Focus
+
+### India Focus
 - **India Medal Tally:**
   - 🥇 Gold: 16
   - 🥈 Silver: 1
   - 🥉 Bronze: 4
 - Dominated in **Hockey** and **Shooting**.
+
 
 ### 🥇 Country vs Gold Medals
 - Comparison of countries by only **gold medals**.
@@ -76,48 +78,44 @@ The analysis is based on **15,315 cleaned entries** across **11 columns**, cover
 - **Michael Phelps (USA)**: 16 medals
 - Other top performers include **Jenny Thompson**, **Carl Lewis**, and **Nikolay Andrianov**.
 
+
 ### 📈 Statistical Tests & Inference
+
+
 To support the visual insights with statistical evidence, you performed formal hypothesis testing using:
 
-🧪 1. One-Way ANOVA (Analysis of Variance)
+### 🧪 1. One-Way ANOVA (Analysis of Variance)
+
+
 Purpose: To test if mean medal counts differ significantly across different sports.
 
 Result Insight: A statistically significant result suggests that some sports yield higher medal chances than others.
 
 Application: Useful to justify why sports like Aquatics and Athletics dominate.
 
-python
-Copy
-Edit
-from scipy.stats import f_oneway
-f_oneway(aquatics, athletics, hockey, ...)
 
-🎯 2. Chi-Square Test (Independence)
+### 🎯 2. Chi-Square Test (Independence)
+
 Purpose: To check if medal type is dependent on gender or country.
 
 Used For: Categorical feature relationships — e.g., whether men win more gold compared to women.
 
 Insight: Statistically significant Chi² value shows that gender and medal type are not independent — confirming visual pie and bar charts.
 
-python
-Copy
-Edit
-from scipy.stats import chi2_contingency
-chi2_contingency(pd.crosstab(df['Gender'], df['Medal']))
-🧪 3. t-Test (Two Sample)
+
+
+### 🧪 3. t-Test (Two Sample) 
+
 Purpose: Compare mean medal counts between men and women.
 
 Insight: Indicates whether men win significantly more medals than women or not — especially useful pre- and post-2000 where female participation grew.
 
-python
-Copy
-Edit
-from scipy.stats import ttest_ind
-ttest_ind(men_medals, women_medals)
 
 
 ### 🤖 Machine Learning Model: Predicting Medal Type
-You built a classification model to predict whether a medal is Gold, Silver, or Bronze based on:
+
+
+I built a classification model to predict whether a medal is Gold, Silver, or Bronze based on:
 
 🏅 Sport
 
@@ -125,7 +123,8 @@ You built a classification model to predict whether a medal is Gold, Silver, or 
 
 🌍 Country
 
-✅ Workflow Summary:
+### ✅ Workflow Summary:
+
 Data Preparation
 
 Encoded categorical variables (LabelEncoder / OneHotEncoder)
@@ -142,33 +141,17 @@ Train-Test Split: e.g., 70:30 ratio
 
 Evaluation Metrics: Accuracy, Confusion Matrix, Classification Report
 
-Sample Code:
-
-python
-Copy
-Edit
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report
-
-X = df[["Sport", "Gender", "Country"]]  # Encoded
-y = df["Medal"]
-
-X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y)
-
-model = DecisionTreeClassifier()
-model.fit(X_train, y_train)
-y_pred = model.predict(X_test)
-
-print(classification_report(y_test, y_pred))
 Insights:
 
 Certain sports (like Swimming, Gymnastics) and countries (like USA, China) have higher chances of Gold.
 
 The model helps classify likely medal type before the outcome is known — valuable for performance forecasting.
 
-📌 Summary of Insights from PDF + Stats + ML
+
+### 📌 Summary of Insights from PDF + Stats + ML
+
 Insight Area	Finding
+
 🥇 Medal Distribution	USA, Soviet Union, and China dominate medal counts
 👩‍🦰 Gender Gap	Women’s participation and medal count rose steeply post-1992
 🏃‍♂️ Sport-wise Spread	Aquatics and Athletics produce the most medals
@@ -179,17 +162,18 @@ Insight Area	Finding
 
 ---
 
-## 📁 Files in this Repository
+### 📁 Files in this Repository
 
 | File | Description |
 |------|-------------|
 | `Olympics.ipynb` | Main Jupyter notebook for analysis |
-| `Olympics pdf.pdf` | Exported visuals and results |
+| `Olympics.pdf` | Exported visuals and results |
+| `Olympics.csv` | Raw dataset of Olympics |
 | `README.md` | This summary file |
 
 ---
 
-## 🚀 Technologies Used
+### 🚀 Technologies Used
 
 - **Python (Pandas, Matplotlib, Seaborn)** – For data analysis & visualization
 - **Google Colab / Jupyter Notebook** – Coding and exploration platform
@@ -197,7 +181,7 @@ Insight Area	Finding
 
 ---
 
-## 📈 Metrics Tracked
+### 📈 Metrics Tracked
 
 - Medal distribution by:
   - Year & City
@@ -211,7 +195,7 @@ Insight Area	Finding
 
 ---
 
-## 🧠 Insights & Observations
+### 🧠 Insights & Observations
 
 - **USA** dominated overall and across multiple sports.
 - **Men** won more medals, but **female participation** saw strong growth post-1992.
@@ -219,3 +203,9 @@ Insight Area	Finding
 - **Michael Phelps** emerged as the most decorated Olympian during this era.
 - **India** saw a modest medal count, primarily from Hockey and Shooting.
 
+
+🙌 Author
+BIMAL KUMAR SAINI
+Data Analyst Intern
+📧 bimalsaini333@gmail.com
+🔗 [LinkedIn][https://www.linkedin.com/in/bimalsaini333/] | [GitHub][https://github.com/SainiBimal]
