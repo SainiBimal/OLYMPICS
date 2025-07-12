@@ -80,42 +80,31 @@ The analysis is based on **15,315 cleaned entries** across **11 columns**, cover
 
 
 ### 📈 Statistical Tests & Inference
+- To support the visual insights with statistical evidence, you performed formal hypothesis testing using:
 
 
-To support the visual insights with statistical evidence, you performed formal hypothesis testing using:
 
 ### 🧪 1. One-Way ANOVA (Analysis of Variance)
-
-
-Purpose: To test if mean medal counts differ significantly across different sports.
-
-Result Insight: A statistically significant result suggests that some sports yield higher medal chances than others.
-
-Application: Useful to justify why sports like Aquatics and Athletics dominate.
+- Purpose: To test if mean medal counts differ significantly across different sports.
+- Result Insight: A statistically significant result suggests that some sports yield higher medal chances than others.
+- Application: Useful to justify why sports like Aquatics and Athletics dominate.
 
 
 ### 🎯 2. Chi-Square Test (Independence)
-
-Purpose: To check if medal type is dependent on gender or country.
-
-Used For: Categorical feature relationships — e.g., whether men win more gold compared to women.
-
-Insight: Statistically significant Chi² value shows that gender and medal type are not independent — confirming visual pie and bar charts.
+-Purpose: To check if medal type is dependent on gender or country.
+-Used For: Categorical feature relationships — e.g., whether men win more gold compared to women.
+-Insight: Statistically significant Chi² value shows that gender and medal type are not independent — confirming visual pie and bar charts.
 
 
 
 ### 🧪 3. t-Test (Two Sample) 
-
-Purpose: Compare mean medal counts between men and women.
-
-Insight: Indicates whether men win significantly more medals than women or not — especially useful pre- and post-2000 where female participation grew.
+-Purpose: Compare mean medal counts between men and women.
+-Insight: Indicates whether men win significantly more medals than women or not — especially useful pre- and post-2000 where female participation grew.
 
 
 
 ### 🤖 Machine Learning Model: Predicting Medal Type
-
-
-I built a classification model to predict whether a medal is Gold, Silver, or Bronze based on:
+-I built a classification model to predict whether a medal is Gold, Silver, or Bronze based on:
 
 🏅 Sport
 
@@ -124,28 +113,17 @@ I built a classification model to predict whether a medal is Gold, Silver, or Br
 🌍 Country
 
 ### ✅ Workflow Summary:
-
-Data Preparation
-
-Encoded categorical variables (LabelEncoder / OneHotEncoder)
-
-Cleaned data (dropped nulls, removed duplicates)
-
-Created feature matrix X and target y
-
-Modeling
-
-Model Used: DecisionTreeClassifier (or similar)
-
-Train-Test Split: e.g., 70:30 ratio
-
-Evaluation Metrics: Accuracy, Confusion Matrix, Classification Report
-
-Insights:
-
-Certain sports (like Swimming, Gymnastics) and countries (like USA, China) have higher chances of Gold.
-
-The model helps classify likely medal type before the outcome is known — valuable for performance forecasting.
+-Data Preparation
+-Encoded categorical variables (LabelEncoder / OneHotEncoder)
+-Cleaned data (dropped nulls, removed duplicates)
+-Created feature matrix X and target y
+-Modeling
+-Model Used: DecisionTreeClassifier (or similar)
+-Train-Test Split: e.g., 70:30 ratio
+-Evaluation Metrics: Accuracy, Confusion Matrix, Classification Report
+-Insights:
+-Certain sports (like Swimming, Gymnastics) and countries (like USA, China) have higher chances of Gold.
+-The model helps classify likely medal type before the outcome is known — valuable for performance forecasting.
 
 
 ### 📌 Summary of Insights from PDF + Stats + ML
