@@ -91,20 +91,20 @@ The analysis is based on **15,315 cleaned entries** across **11 columns**, cover
 
 
 ### 🎯 2. Chi-Square Test (Independence)
--Purpose: To check if medal type is dependent on gender or country.
--Used For: Categorical feature relationships — e.g., whether men win more gold compared to women.
--Insight: Statistically significant Chi² value shows that gender and medal type are not independent — confirming visual pie and bar charts.
+- Purpose: To check if medal type is dependent on gender or country.
+- Used For: Categorical feature relationships — e.g., whether men win more gold compared to women.
+- Insight: Statistically significant Chi² value shows that gender and medal type are not independent — confirming visual pie and bar charts.
 
 
 
 ### 🧪 3. t-Test (Two Sample) 
--Purpose: Compare mean medal counts between men and women.
--Insight: Indicates whether men win significantly more medals than women or not — especially useful pre- and post-2000 where female participation grew.
+- Purpose: Compare mean medal counts between men and women.
+- Insight: Indicates whether men win significantly more medals than women or not — especially useful pre- and post-2000 where female participation grew.
 
 
 
 ### 🤖 Machine Learning Model: Predicting Medal Type
--I built a classification model to predict whether a medal is Gold, Silver, or Bronze based on:
+- I built a classification model to predict whether a medal is Gold, Silver, or Bronze based on:
 
 🏅 Sport
 
@@ -113,30 +113,30 @@ The analysis is based on **15,315 cleaned entries** across **11 columns**, cover
 🌍 Country
 
 ### ✅ Workflow Summary:
--Data Preparation
--Encoded categorical variables (LabelEncoder / OneHotEncoder)
--Cleaned data (dropped nulls, removed duplicates)
--Created feature matrix X and target y
--Modeling
--Model Used: DecisionTreeClassifier (or similar)
--Train-Test Split: e.g., 70:30 ratio
--Evaluation Metrics: Accuracy, Confusion Matrix, Classification Report
--Insights:
--Certain sports (like Swimming, Gymnastics) and countries (like USA, China) have higher chances of Gold.
--The model helps classify likely medal type before the outcome is known — valuable for performance forecasting.
+- Data Preparation
+- Encoded categorical variables (LabelEncoder / OneHotEncoder)
+- Cleaned data (dropped nulls, removed duplicates)
+- Created feature matrix X and target y
+- Modeling
+- Model Used: DecisionTreeClassifier (or similar)
+- Train-Test Split: e.g., 70:30 ratio
+- Evaluation Metrics: Accuracy, Confusion Matrix, Classification Report
+- Insights:
+- Certain sports (like Swimming, Gymnastics) and countries (like USA, China) have higher chances of Gold.
+- The model helps classify likely medal type before the outcome is known — valuable for performance forecasting.
 
 
 ### 📌 Summary of Insights from PDF + Stats + ML
 
-Insight Area	Finding
+- Insight Area	Finding
 
-🥇 Medal Distribution	USA, Soviet Union, and China dominate medal counts
-👩‍🦰 Gender Gap	Women’s participation and medal count rose steeply post-1992
-🏃‍♂️ Sport-wise Spread	Aquatics and Athletics produce the most medals
-🔍 ANOVA	Significant difference in mean medals across sports
-♀️ Chi2 Test	Medal type is dependent on gender (not independent)
-🧪 t-Test	Statistically significant difference in medal counts by gender
-🤖 ML Prediction	Sport, Gender, and Country are good predictors of medal type
+- 🥇 Medal Distribution	USA, Soviet Union, and China dominate medal counts
+- 👩‍🦰 Gender Gap	Women’s participation and medal count rose steeply post-1992
+- 🏃‍♂️ Sport-wise Spread	Aquatics and Athletics produce the most medals
+- 🔍 ANOVA	Significant difference in mean medals across sports
+- ♀️ Chi2 Test	Medal type is dependent on gender (not independent)
+- 🧪 t-Test	Statistically significant difference in medal counts by gender
+- 🤖 ML Prediction	Sport, Gender, and Country are good predictors of medal type
 
 ---
 
