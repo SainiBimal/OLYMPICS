@@ -181,9 +181,11 @@ The analysis is based on **15,315 cleaned entries** across **11 columns**, cover
 - **Michael Phelps** emerged as the most decorated Olympian during this era.
 - **India** saw a modest medal count, primarily from Hockey and Shooting.
 
+---
 
-🙌 Author
-BIMAL KUMAR SAINI
-Data Analyst Intern
-📧 bimalsaini333@gmail.com
+## 🙌 Author
+
+**BIMAL KUMAR SAINI**              
+Data Analyst Intern                      
+📧 bimalsaini333@gmail.com              
 🔗 [LinkedIn][https://www.linkedin.com/in/bimalsaini333/] | [GitHub][https://github.com/SainiBimal]
