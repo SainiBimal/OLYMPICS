@@ -183,6 +183,10 @@ The analysis is based on **15,315 cleaned entries** across **11 columns**, cover
 
 ---
 
+![Visitor Count](https://komarev.com/ghpvc/?username=SainiBimal&style=flat-square)
+
+
+
 ## 🙌 Author
 
 **BIMAL KUMAR SAINI**              
