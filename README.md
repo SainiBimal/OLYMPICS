@@ -4,6 +4,14 @@ This repository presents a comprehensive data analysis and visualization of **Su
 
 ---
 
+## 📊 Dashboard
+
+![Dashboard](https://github.com/user-attachments/assets/d035b0ac-93e2-4813-8d02-d267d7f18482)
+
+
+
+---
+
 ## 📊 Project Overview
 
 This project aims to analyze Olympic medal trends by year, city, gender, country, sport, discipline, and event. It uncovers which countries and athletes dominated the games, which sports yielded the most medals, and how participation evolved over time.
