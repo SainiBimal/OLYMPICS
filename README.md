@@ -194,8 +194,6 @@ The analysis is based on **15,315 cleaned entries** across **11 columns**, cover
 
 ---
 
-![Visitor Count](https://komarev.com/ghpvc/?username=SainiBimal&style=flat-square)
-
 
 
 ## 🙌 Author
@@ -204,3 +202,6 @@ The analysis is based on **15,315 cleaned entries** across **11 columns**, cover
 Data Analyst Intern                      
 📧 bimalsaini333@gmail.com              
 🔗 [LinkedIn][https://www.linkedin.com/in/bimalsaini333/] | [GitHub][https://github.com/SainiBimal]
+
+
+![Hits](https://hits.sh/github.com/SainiBimal/MyRepo.svg?style=flat-square)
