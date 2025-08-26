@@ -144,6 +144,9 @@ The analysis is based on **15,315 cleaned entries** across **11 columns**, cover
 
 | File | Description |
 |------|-------------|
+| `Olympics Analysis.pdf` | Final presentation |
+| `Olympics.pbix` | Olympics Power BI file |
+| `Olympics.sql` | Olympics SQL file |
 | `Olympics.ipynb` | Main Jupyter notebook for analysis |
 | `Olympics.pdf` | Exported visuals and results |
 | `Olympics.csv` | Raw dataset of Olympics |
