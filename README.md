@@ -1,4 +1,4 @@
-🏅 OLYMPICS MEDAL ANALYSIS (1976–2008)
+🏅 OLYMPICS MEDAL ANALYSIS (1976–2008) 
 
 This repository presents a comprehensive data analysis and visualization of **Summer Olympic medals** from **1976 to 2008** using **Python**, **Pandas**, **Matplotlib**, and **Seaborn**.
 
